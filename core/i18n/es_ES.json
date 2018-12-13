@@ -1,0 +1,45 @@
+{
+    "plugins/gammu/plugin_info/configuration.php": {
+        "Clef USB": "Clave USB",
+        "Aucun": "Ninguno",
+        "PIN : ": "PIN :"
+    },
+    "plugins/gammu/core/class/gammu.class.php": {
+        "Gammu": "Gammu",
+        "NOK": "NOK",
+        "Indique si le service gammu est démarré": "Indicar si el servicio gammu esta iniciado",
+        "Message": "Mensaje",
+        "Envoi": "Envío"
+    },
+    "plugins/gammu/desktop/php/gammu.php": {
+        "Ajouter un équipement": "Agregar un dispositivo",
+        "Rechercher": "Buscar",
+        "Gestion": "Gestión",
+        "Configuration": "Configuración",
+        "Mes Gammu": "Mis Gammu",
+        "Sauvegarder": "Salvar",
+        "Supprimer": "Borrar",
+        "Configuration avancée": "Configuración avanzada",
+        "Equipement": "Dispositivo",
+        "Commandes": "Comandos",
+        "Nom de l'équipement Gammu": "Nombre del dispositivo Gammu",
+        "Nom de l'équipement gammu": "Nombre del dispositivo gammu",
+        "Catégorie": "Categoría",
+        "Activer": "Activar",
+        "Visible": "Visible",
+        "Téléphone": "Teléfono",
+        "numéro": "número",
+        "Utilisateur": "Usuario",
+        "username": "usuario",
+        "Interactions": "Interacciones",
+        "Non": "No",
+        "Oui": "Sí",
+        "Nom": "Nombre",
+        "Valeur": "Valor",
+        "Options": "Opciones"
+    },
+    "plugins/gammu/desktop/js/gammu.js": {
+        "Nom": "Nombre",
+        "Tester": "Prueba"
+    }
+}

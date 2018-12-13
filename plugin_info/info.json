@@ -1,0 +1,11 @@
+{
+	"id" : "hilink",
+	"name" : "Hilink",
+	"licence" : "AGPL",
+	"author" : "Mickaël PICAUD",
+	"require" : "2.4",
+	"category" : "communication",
+	"hasOwnDeamon" : true,
+    "hasDependency" : false,
+	"hasInteract" : true
+}
