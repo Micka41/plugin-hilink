@@ -27,7 +27,7 @@ if (!isConnect()) {
 
 <form class="form-horizontal">
   <div class="form-group">
-		<legend><i class="fa fa-list-alt"></i> {{Modem}}</legend>
+		<legend><i class="fa-list-alt"></i> {{Modem}}</legend>
         <div class="form-group">
             <label class="col-lg-4 control-label">{{Adresse du modem}}</label>
             <div class="col-lg-2">
@@ -51,7 +51,7 @@ if (!isConnect()) {
 </form>
 
  <form class="form-horizontal">
-	<legend><i class="fa fa-envelope"></i> {{Paramètrage SMS}}</legend>
+	<legend><i class="fa-envelope"></i> {{Paramètrage SMS}}</legend>
 	    <div class="form-group">
             <label class="col-lg-4 control-label">{{Pause dans la boucle du demon en secondes}}</label>
             <div class="col-lg-2">

@@ -121,9 +121,32 @@ class hilink extends eqLogic {
 	}
 		
 	public static function dependancy_info() {
+		$return = array();
+		$return['log'] = 'Hilink_update';
+		$return['progress_file'] = '/tmp/dependancy_Hilink_in_progress';
+		if (file_exists('/tmp/dependancy_Hilink_in_progress')) {
+			$return['state'] = 'in_progress';
+		} else {
+			if (file_exists(log::getPathToLog('Hilink_update'))) {
+				$return['state'] = 'ok';
+			} else {
+				$return['state'] = 'nok';
+			}
+		}
+		return $return;
 	}
 
 	public static function dependancy_install() {
+		if (file_exists('/tmp/dependancy_Hilink_in_progress')) {
+			return;
+		}
+		log::remove('Hilink_update');
+		return array('script' => dirname(__FILE__) . '/../../resources/install.sh ', 'log' => log::getPathToLog('Hilink_update'));
+		/*
+		$cmd = system::getCmdSudo() . ' /bin/bash ' . dirname(__FILE__) . '/../../ressources/install.sh';
+		$cmd .= ' >> ' . log::getPathToLog('Hilink_update') . ' 2>&1 &';
+		echo ($cmd);
+		exec($cmd);*/
 	}
 
   	public static function configuration() 
@@ -526,7 +549,7 @@ class hilink extends eqLogic {
 						$value	= HSPDev\HuaweiApi\Router::get_network_typecnx($network->Rat);	
 						break;
 					case "signal":
-						$value = $status->SignalIcon;
+						$value = intval($status->SignalIcon);
 						break;
 					case "startday":
 						$value = $startdate->StartDay;
